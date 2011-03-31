@@ -1,7 +1,12 @@
-= rack-facebook-method-fix
+= Install
 
-Description goes here.
+  gem install rack-facebook-method-fix
 
+= Usage
+
+  require "rack-facebook-method-fix"
+  use Rack::Facebook::MethodFix
+  
 == Contributing to rack-facebook-method-fix
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
