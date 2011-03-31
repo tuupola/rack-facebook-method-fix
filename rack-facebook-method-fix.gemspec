@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rack-facebook-method-fix}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mika Tuupola"]
@@ -24,7 +24,8 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/rack/facebook-method-fix.rb",
+    "lib/rack-facebook-method-fix.rb",
+    "lib/rack/facebook/method-fix.rb",
     "rack-facebook-method-fix.gemspec",
     "test/helper.rb",
     "test/test_rack-facebook-method-fix.rb"
