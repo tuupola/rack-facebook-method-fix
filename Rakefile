@@ -15,14 +15,15 @@ Jeweler::Tasks.new do |gem|
   gem.name = "rack-facebook-method-fix"
   gem.homepage = "http://github.com/tuupola/rack-facebook-method-fix"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Fix RESTfull Facebook applications}
+  gem.description = %Q{In early 2011 Facebook started to send all requests as POST. All applications using REST broke.}
   gem.email = "tuupola@appelsiini.net"
   gem.authors = ["Mika Tuupola"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.files.include %w(lib/rack/*)
 end
 Jeweler::RubygemsDotOrgTasks.new
 
