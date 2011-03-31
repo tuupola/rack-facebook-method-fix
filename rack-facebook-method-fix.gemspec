@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mika Tuupola"]
   s.date = %q{2011-03-31}
-  s.description = %q{In early 2011 Facebook started to send all requests as POST. All applications using REST broke.}
+  s.description = %q{In early 2011 Facebook started to send all application requests as POST. This gem converts POST requests back to GET when applicable.}
   s.email = %q{tuupola@appelsiini.net}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -19,11 +19,13 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "lib/rack/facebook-method-fix.rb",
+    "rack-facebook-method-fix.gemspec",
     "test/helper.rb",
     "test/test_rack-facebook-method-fix.rb"
   ]
