@@ -1,0 +1,1 @@
+require "rack/facebook/method-fix"
