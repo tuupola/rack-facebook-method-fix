@@ -10,7 +10,7 @@ module Rack
       pp env["REQUEST_METHOD"]
       if env["REQUEST_METHOD"] == "POST"
         req = Request.new(env)
-        env["REQUEST_METHOD"] = "GET" if req.params[:signed_request]
+        env["REQUEST_METHOD"] = "GET" if req.params["signed_request"]
       end
       pp "AFTER"
       pp env["REQUEST_METHOD"]
