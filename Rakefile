@@ -16,7 +16,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/tuupola/rack-facebook-method-fix"
   gem.license = "MIT"
   gem.summary = %Q{Fix RESTfull Facebook applications}
-  gem.description = %Q{In early 2011 Facebook started to send all application requests as POST. This gem converts POST requests back to GET when applicable.}
+  gem.description = %Q{In early 2011 Facebook started to send all application requests as POST. This Rack middleware converts POST requests back to GET when applicable.}
   gem.email = "tuupola@appelsiini.net"
   gem.authors = ["Mika Tuupola"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,

@@ -1,3 +1,7 @@
+= What?
+
+In early 2011 Facebook started to send all iframe application requests as POST. Because of this most REST based applications broke. This Rack::Facebook::MethodFix middleware looks for incoming POST requests. If the request contains _signed_request_ parameter it converts request to GET as originally intended. Optionally if you give Facebook application _secret_id_ in middleware settings it will also validate the contents of _signed_request_ parameter.
+  
 = Install
 
   gem install rack-facebook-method-fix
@@ -7,7 +11,12 @@
   require "rack-facebook-method-fix"
   use Rack::Facebook::MethodFix
   
-== Contributing to rack-facebook-method-fix
+or
+
+  require "rack-facebook-method-fix"
+  use Rack::Facebook::MethodFix, :secret_id => "c561df165eacdd6e32672c9eaee10318"  
+  
+== Contributing to Rack::Facebook::MethodFix
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -19,6 +28,6 @@
 
 == Copyright
 
-Copyright (c) 2011 Mika Tuupola. See LICENSE.txt for
+Copyright (c) 2011 Mika Tuupola. See LICENSE for
 further details.
 
