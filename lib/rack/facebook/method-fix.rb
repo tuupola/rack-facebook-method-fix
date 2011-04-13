@@ -10,7 +10,7 @@ module Rack
       def call(env)
         if env["REQUEST_METHOD"] == "POST"
           request = Request.new(env)
-          if @settings[:secret_id]
+          if @settings[:secret_id] && request.params["signed_request"]
             env["REQUEST_METHOD"] = "GET" if signed_request_valid?(@settings[:secret_id], request)          
           else
             env["REQUEST_METHOD"] = "GET" if request.params["signed_request"]
@@ -19,6 +19,7 @@ module Rack
         @app.call(env)
       end
       
+      # Code adapted from https://github.com/nsanta/fbgraph
       def signed_request_valid?(secret_id, request)
         encoded_signature, payload = request.params["signed_request"].split(".", 2)
         signature = ""
