@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mika Tuupola"]
-  s.date = %q{2011-04-05}
+  s.date = %q{2011-04-13}
   s.description = %q{In early 2011 Facebook started to send all application requests as POST. This Rack middleware converts POST requests back to GET when applicable.}
   s.email = %q{tuupola@appelsiini.net}
   s.extra_rdoc_files = [
