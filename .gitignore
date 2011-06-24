@@ -40,3 +40,11 @@ pkg
 #
 # For vim:
 #*.swp
+.idea/.name
+.idea/.rakeTasks
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/rack-facebook-method-fix.iml
+.idea/vcs.xml
+.idea/workspace.xml
