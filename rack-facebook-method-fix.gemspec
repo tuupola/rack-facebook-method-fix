@@ -25,10 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/rack-facebook-method-fix.rb",
-    "lib/rack/facebook/method-fix.rb",
-    "rack-facebook-method-fix.gemspec",
-    "test/helper.rb",
-    "test/test_rack-facebook-method-fix.rb"
+    "rack-facebook-method-fix.gemspec"
   ]
   s.homepage = %q{http://github.com/tuupola/rack-facebook-method-fix}
   s.licenses = ["MIT"]
@@ -36,8 +33,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Fix RESTfull Facebook applications}
   s.test_files = [
-    "test/helper.rb",
-    "test/test_rack-facebook-method-fix.rb"
+    "spec/spec_helper.rb",
+    "spec/rack/facebook/method_fix_spec.rb"
   ]
 
   if s.respond_to? :specification_version then
