@@ -14,7 +14,15 @@ In early 2011 Facebook started to send all iframe application requests as POST. 
 or
 
   require "rack-facebook-method-fix"
-  use Rack::Facebook::MethodFix, :secret_id => "c561df165eacdd6e32672c9eaee10318"  
+  use Rack::Facebook::MethodFix, :secret_id => "c561df165eacdd6e32672c9eaee10318"
+
+
+You can exclude requests from being processed by adding an exclude option:
+
+  use Rack::Facebook::MethodFix, :exclude => proc { |env| env['PATH_INFO'].match(/^\/admin/) }
+
+This would make sure that no path in the /admin namespace would change from a POST to a GET regardless of the signed_request param.
+
   
 == Contributing to Rack::Facebook::MethodFix
  
